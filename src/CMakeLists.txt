@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 3.0.0)
 
-find_package(HailoRT REQUIRED) # TODO: Replace with FetchContent
-find_package(OpenCV REQUIRED) # TODO: Replace with FetchContent
+include(${PROJECT_SOURCE_DIR}/cmake/hailort.cmake)
+include(${PROJECT_SOURCE_DIR}/cmake/opencv.cmake)
 
 set(SOURCE_FILES main.cpp)
 
